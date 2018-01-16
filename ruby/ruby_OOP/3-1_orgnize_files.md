@@ -1,6 +1,4 @@
-##3-1.標題是叫做 **組織與管理程式碼檔案**
-
-投影片標題則是    **重新組織你的程式檔案**  
+**重新組織你的程式檔案**  
 小標題：  
 
 1. 爲什麼要組織你的檔案？
@@ -49,6 +47,15 @@ play.rb _ monster.rb (class Monster)
 他們通常會被放在同一個資料夾裡  
 
 ## 如何讓 Ruby 載入檔案？ Part.1
+
+```
+require 跟 require_relative，最大的差別不是要不要加 "./"，而是基準目錄不同。
+require 是從你執行的地方開始算。
+require_relative 是從寫這行的檔案所在位置開始算。
+
+所以你只要換目錄執行同樣的程式，require就會找不到檔案。
+require_relative 因為是從同一個位置開始找所以不會被影響到。
+```
 
 1. 關鍵字： `require`
 * 加上 "./" 說明要連結的檔案在同一個資料夾內
@@ -126,7 +133,7 @@ Mage 需要 Hero 的程式碼才能執行
 
 ```
 
-### ...這邊投影片真爛 XD，有夠混亂的，從根(superclass)講起才對
+### ...投影片從根(superclass)講起比較合適
 
 因此：
 如果要使用 (class Mage) mage.rb，就需要載入(class Hero) hero.rb
