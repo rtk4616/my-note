@@ -9,6 +9,7 @@
   - [MAC 安裝 Gitbook](note/gitbook/gitbook_0_install.md)
   - [開始使用 Gitbook](note/gitbook/gitbook_1_start.md)
   - [上架/發佈 Gitbook](note/gitbook/gitbook_2_upload.md)
+  - [將 Gitbook 同步至 Github](note/gitbook/gitbook_3_sync_with_github.md)
 
 * [Ruby學習筆記]()
   - [物件導向OOP]()
