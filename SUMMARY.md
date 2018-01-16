@@ -36,3 +36,4 @@
     - [3.1. 繪製學生選課 ERD](ruby/database/3-1_ERD_student_class.md)
     - [3.2. 繪製電子商務 ERD](ruby/database/3-2_e-commerce.md)
     - [4.1. 認識SQL](ruby/database/4-1_SQL.md)
+    - [RailsFun 資料庫概論筆記](ruby/database/RailsFun_Database_Introduction.md)
