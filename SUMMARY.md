@@ -8,7 +8,7 @@
   - [Markdown Atom Package 推薦]()
   - [MAC 安裝 Gitbook](note/gitbook/gitbook_0_install.md)
   - [開始使用 Gitbook](note/gitbook/gitbook_1_start.md)
-  - [上架/發佈 Gitbook](note/gitbok/gitbook_2_upload.md)
+  - [上架/發佈 Gitbook](note/gitbook/gitbook_2_upload.md)
 
 * [Ruby學習筆記]()
   - [物件導向OOP]()
