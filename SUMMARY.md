@@ -4,7 +4,7 @@
 
 * [Gitbook筆記]()
   <!-- - [Markdown 語法補充]() -->
-  - [Markdown 中文輸入法推薦 Rime](note/rime/install_note.md)
+  - [Markdown 中文輸入法推薦 Rime](note/rime/rime_install_note.md)
   <!-- - [Markdown Atom Package 推薦]() -->
   - [MAC 安裝 Gitbook](note/gitbook/gitbook_0_install.md)
   - [開始使用 Gitbook](note/gitbook/gitbook_1_start.md)
