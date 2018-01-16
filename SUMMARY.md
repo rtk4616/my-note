@@ -1,0 +1,27 @@
+# Summary
+
+* [Note](README.md)
+
+* [Gitbook筆記]()
+  - [Markdown 語法補充]()
+  - [Markdown 中文輸入法推薦 Rime](note/rime/install-note.md)
+  - [Markdown Atom Package 推薦]()
+  - [MAC 安裝 Gitbook](note/gitbook/gitbook_install.md)
+  - [開始使用 Gitbook](note/gitbook/gitbook_start.md)
+
+* [Ruby學習筆記]()
+  - [物件導向OOP]()
+    - [1.1. 物件導向介紹](ruby/ruby_OOP/1-1_OOP_introduction.md)
+    - [1.2. 物件導向基本元素](ruby/ruby_OOP/1-2_OOP_fundemental_elements.md)
+    - [1.3. 物件初始化](ruby/ruby_OOP/2-1_3_attr_accessor.md)
+    - [1.4. class 練習](ruby/ruby_OOP/2-4_class_practice.md)
+    - [1.5. 繼承 inherent](ruby/ruby_OOP/2-5_Inherent.md)
+    - [1.6. SuperClass 與 SubClass](ruby/ruby_OOP/2-6_super_and_sub_class.md)
+    - [1.7. ClassVariable 與 Self](ruby/ruby_OOP/2-7_class_variable_method_self.md)
+    - [2.1. 重新組織檔案](ruby/ruby_OOP/3-1_orgnize_files.md)
+    - [2.2. 用常數限制輸入變數](ruby/ruby_OOP/3-2_constant.md)
+    - [2.3. 用私有方法隱藏方法](ruby/ruby_OOP/3-3_private_method.md)
+    - [3.1. 抽象化](ruby/ruby_OOP/4-1_抽象化.md)
+    - [3.2. 封裝](ruby/ruby_OOP/4-2_封裝.md)
+    - [3.3. 繼承](ruby/ruby_OOP/4-3_繼承.md)
+    - [3.4. 多型](ruby/ruby_OOP/4-4_多型.md)
