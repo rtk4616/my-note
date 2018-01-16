@@ -6,8 +6,9 @@
   - [Markdown 語法補充]()
   - [Markdown 中文輸入法推薦 Rime](note/rime/install-note.md)
   - [Markdown Atom Package 推薦]()
-  - [MAC 安裝 Gitbook](note/gitbook/gitbook_install.md)
-  - [開始使用 Gitbook](note/gitbook/gitbook_start.md)
+  - [MAC 安裝 Gitbook](note/gitbook/gitbook_0_install.md)
+  - [開始使用 Gitbook](note/gitbook/gitbook_1_start.md)
+  - [上架/發佈 Gitbook](note/gitbok/gitbook_2_upload.md)
 
 * [Ruby學習筆記]()
   - [物件導向OOP]()
