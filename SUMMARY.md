@@ -1,11 +1,11 @@
 # Summary
 
-* [Note](README.md)
+* [Introduction](README.md)
 
 * [Gitbook筆記]()
-  - [Markdown 語法補充]()
+  <!-- - [Markdown 語法補充]() -->
   - [Markdown 中文輸入法推薦 Rime](note/rime/install-note.md)
-  - [Markdown Atom Package 推薦]()
+  <!-- - [Markdown Atom Package 推薦]() -->
   - [MAC 安裝 Gitbook](note/gitbook/gitbook_0_install.md)
   - [開始使用 Gitbook](note/gitbook/gitbook_1_start.md)
   - [上架/發佈 Gitbook](note/gitbook/gitbook_2_upload.md)
