@@ -48,14 +48,12 @@ play.rb _ monster.rb (class Monster)
 
 ## 如何讓 Ruby 載入檔案？ Part.1
 
-```
-require 跟 require_relative，最大的差別不是要不要加 "./"，而是基準目錄不同。
-require 是從你執行的地方開始算。
-require_relative 是從寫這行的檔案所在位置開始算。
+##### require 跟 require_relative，最大的差別不是要不要加 "./"，而是基準目錄不同。
+* require 是從你執行的地方開始算。
+* require_relative 是從寫這行的檔案所在位置開始算。
 
 所以你只要換目錄執行同樣的程式，require就會找不到檔案。
 require_relative 因為是從同一個位置開始找所以不會被影響到。
-```
 
 1. 關鍵字： `require`
 * 加上 "./" 說明要連結的檔案在同一個資料夾內

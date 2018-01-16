@@ -19,7 +19,8 @@
 (注意教材先只教妳怎麼寫 class variable，又用到 self ，搞得很雜)
 - 建議看我的筆記，單純很多：
 
-* class variable 測試：
+* class variable 測試：  
+
 ```rb
 class CVtest
   @@test = [123]

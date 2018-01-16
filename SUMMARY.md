@@ -17,7 +17,7 @@
     - [1.2. 物件導向基本元素](ruby/ruby_OOP/1-2_OOP_fundemental_elements.md)
     - [1.3. 物件初始化](ruby/ruby_OOP/2-1_3_attr_accessor.md)
     - [1.4. class 練習](ruby/ruby_OOP/2-4_class_practice.md)
-    - [1.5. 繼承 inherent](ruby/ruby_OOP/2-5_Inherent.md)
+    - [1.5. 繼承 inherent](ruby/ruby_OOP/2-5_inherent.md)
     - [1.6. SuperClass 與 SubClass](ruby/ruby_OOP/2-6_super_and_sub_class.md)
     - [1.7. ClassVariable 與 Self](ruby/ruby_OOP/2-7_class_variable_method_self.md)
     - [2.1. 重新組織檔案](ruby/ruby_OOP/3-1_orgnize_files.md)
