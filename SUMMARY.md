@@ -4,7 +4,7 @@
 
 * [Gitbook筆記]()
   <!-- - [Markdown 語法補充]() -->
-  - [Markdown 中文輸入法推薦 Rime](note/rime/install-note.md)
+  - [Markdown 中文輸入法推薦 Rime](note/rime/install_note.md)
   <!-- - [Markdown Atom Package 推薦]() -->
   - [MAC 安裝 Gitbook](note/gitbook/gitbook_0_install.md)
   - [開始使用 Gitbook](note/gitbook/gitbook_1_start.md)
@@ -27,3 +27,12 @@
     - [3.2. 封裝](ruby/ruby_OOP/4-2_封裝.md)
     - [3.3. 繼承](ruby/ruby_OOP/4-3_繼承.md)
     - [3.4. 多型](ruby/ruby_OOP/4-4_多型.md)
+  - [資料庫 Database]()
+    - [1.1. 資料形態與資料表](ruby/database/1-1_data.md)
+    - [1.2. 認識資料庫](ruby/database/1-2_database.md)
+    - [1.3. 資料間的關係](ruby/database/1-3_data_relationship.md)
+    - [2.1. 設計資料庫](ruby/database/2-1_design_database.md)
+    - [2.2. 繪製實體關聯圖](ruby/database/2-2_relationship_diagram.md)
+    - [3.1. 繪製學生選課 ERD](ruby/database/3-1_ERD_student_class.md)
+    - [3.2. 繪製電子商務 ERD](ruby/database/3-2_e-commerce.md)
+    - [4.1. 認識SQL](ruby/database/4-1_SQL.md)
