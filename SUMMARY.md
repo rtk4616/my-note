@@ -37,10 +37,11 @@
     - [3.2. 繪製電子商務 ERD](ruby/database/3-2_e-commerce.md)
     - [4.1. 認識SQL](ruby/database/4-1_SQL.md)
     - [RailsFun 資料庫概論筆記](ruby/database/RailsFun_Database_Introduction.md)
+
 * [Ruby on Rails 學習筆記]()
-  - [Rails 從零開始 Part A, 基本元件](rails_guide/medium_rails_guide_1.md)
-  - [Rails 從零開始 Part B, Create](rails_guide/medium_rails_guide_2-1.md)
-  - [Rails 從零開始 Part C, Create](rails_guide/medium_rails_guide_2-2.md)
-  - [Rails 從零開始 Part D, Read](rails_guide/medium_rails_guide_2-3.md)
-  - [Rails 從零開始 Part E, Update 與 Delete](rails_guide/medium_rails_guide_2-4.md)
-  - [](rails_guide/medium_rails_guide_)
+  - [Rails 從零開始 Part A, 基本元件](rails/rails_guide/medium_rails_guide_1.md)
+  - [Rails 從零開始 Part B, Create](rails/rails_guide/medium_rails_guide_2-1.md)
+  - [Rails 從零開始 Part C, Create](rails/rails_guide/medium_rails_guide_2-2.md)
+  - [Rails 從零開始 Part D, Read](rails/rails_guide/medium_rails_guide_2-3.md)
+  - [Rails 從零開始 Part E, Update 與 Delete](rails/rails_guide/medium_rails_guide_2-4.md)
+  <!-- - [](rails_guide/medium_rails_guide_) -->
