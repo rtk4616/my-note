@@ -154,11 +154,15 @@ Returns the result of a render that's dictated by the options hash
 
 所以 `render :new` 的意思就是：請記得我們這個階段還在，controller#create，我們剛才讓使用者輸入的 @user 資訊還在，因此 render 保留這些資訊並把這些資訊套到指定頁面 :new (users/new.html.erb) ，最後顯示給使用者，讓使用者再次編輯。
 
-不過，目前這個階段我們沒對使用者輸入的資料進行更嚴格的限制，所以我們之後再觸發 render 。
+不過，目前這個階段我們沒對使用者輸入的資料進行更嚴格的限制，所以我們之後再討論如何觸發 render 。
 
+<!--
 所以這段是不是先不加就好？暫時沒辦法實際測試？
 
 原文作者的第四步，重要欄位要填也只有給參考例子...。
+
+後面的寫好記得補個連結。
+-->
 
 ---
 
