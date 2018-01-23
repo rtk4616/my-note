@@ -109,8 +109,6 @@ end
 
 index method 對應到 Route 的 users#index action 。
 > 講到 action 是不是從 Route 開始比較好。
-<!-- 勘誤：此處原文 photos#index，應爲 users#index？
-檔案路徑建議開頭不要加 '/' ?-->
 
 可以先記成 Route 會從使用者在瀏覽器輸入 `0.0.0.0:3000/users`  後  
 會透過 Controller 去找 app/controllers/users_controller.rb  裡的 index method  
@@ -161,14 +159,16 @@ app/views/users 這個資料夾到目前應該已經建立好了
 
 這裡作者的解釋才讓我注意到一些細節。  
 
-> Erb 不用 \<html>, \<body>, \<head> 等內容  
-> Rails 應用了版型 Layout 的概念  
-> 在 View 裡只需要關注內容，不用在意版型  
-> 版型設定都在 views/layout 裡，預設使用 application.html.erb
+```html
+erb 不用 <html>, <body>, <head> 等內容  
+Rails 應用了版型 Layout 的概念  
+在 View 裡只需要關注內容，不用在意版型  
+版型設定都在 views/layout 裡，預設使用 application.html.erb
 
-> Controller 在顯示畫面時  
-> 會把 layout:`application.html.erb` 與 內容： `index.html.erb`  
+Controller 在顯示畫面時  
+會把 layout: application.html.erb 與 內容： index.html.erb
 結合在一起後呈現給使用者  
+```
 
 ### Part4，設定 Route
 先用手刻法吧，之後會比較有FU
