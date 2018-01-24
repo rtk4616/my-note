@@ -2,7 +2,7 @@
   "fontState": {
     "size": "2",
     "family": "sans",
-    "theme": "night"
+    "theme": "Night"
   },
   "links": {
     "sidebar": {
@@ -21,8 +21,6 @@
     "github-buttons@2.1.0",
     "edit-link@^2.0.2",
     "disqus@^0.1.0",
-    "prism@^2.1.0",
-    "prism-themes@^0.0.2",
     "advanced-emoji@^0.2.1",
     "anchors@^0.7.1",
     "include-codeblock@^3.0.2",
@@ -66,16 +64,11 @@
       "shortName": "azraeil"
     },
 
-    "prism": {
-        "css": [
-            "prism-themes/themes/prism-base16-ateliersulphurpool.light.css"
-        ]
-    },
     "github": {
         "url": "https://github.com/Azraeil/my-note"
     },
     "github-buttons": {
-        "repo": "azraeil/gitbook-use",
+        "repo": "azraeil/my-note",
         "types": [
             "Star"
         ],
