@@ -2,7 +2,9 @@
   "plugins": [
     "ga",
     "disqus",
-    "theme-comscore"
+    "theme-comscore",
+    "fontSettings",
+    "theme-default"
   ],
 
   "pluginsConfig":
