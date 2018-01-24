@@ -1,8 +1,17 @@
 {
-  "plugins":["ga"],
-  "pluginsCongig":{
-    "ga":{
-      "token":"UA-112991893-1"
+  "plugins": ["ga"],
+  "pluginsConfig": {
+    "ga": {
+      "token": "UA-112991893-1"
+    }
+  }
+}
+
+{
+  "plugins": ["disqus"],
+  "pluginsConfig": {
+    "disqus": {
+      "shortName": "Azraeil"
     }
   }
 }
