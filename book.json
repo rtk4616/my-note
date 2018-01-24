@@ -2,9 +2,7 @@
   "plugins": [
     "ga",
     "disqus",
-    "theme-comscore",
-    "fontSettings",
-    "theme-default"
+    "theme-comscore"
   ],
 
   "pluginsConfig":
@@ -25,8 +23,9 @@
     "showLevel": true
   },
 
-  "fontSettings":
-  {
-    "theme": "night"
+  "fontsettings": {
+      "theme": "night",
+      "family": "sans",
+      "size": 2
   }
 }
