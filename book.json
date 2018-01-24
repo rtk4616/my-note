@@ -113,7 +113,6 @@
        ]
    },
     "tbfed-pagefooter": {
-        /* "copyright": "Copyright © Azraeil 2018", */
         "modify_label": "Last update：",
         "modify_format": "YYYY-MM-DD HH:mm:ss"
     },
