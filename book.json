@@ -46,7 +46,6 @@
     "musicxml@^1.0.2",
     "klipse@^1.2.0",
     "versions-select@^0.1.1",
-    "rss@^3.0.2",
     "-sharing",
     "sharing-plus@^0.0.2",
     "graph@^0.1.0",
