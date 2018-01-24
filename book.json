@@ -7,10 +7,10 @@
 
     "disqus": {
       "shortName": "azraeil"
-    },
-
-    "theme-api": {
-      "theme": "dark"
     }
+  },
+
+  "theme-default": {
+    "theme": "dark"
   }
 }
