@@ -11,7 +11,7 @@
   "plugins": ["disqus"],
   "pluginsConfig": {
     "disqus": {
-      "shortName": "Azraeil"
+      "shortName": "azraeil"
     }
   }
 }
