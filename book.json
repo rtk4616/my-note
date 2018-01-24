@@ -4,7 +4,7 @@
     "disqus",
     "theme-comscore"
   ],
-  
+
   "pluginsConfig":
   {
     "ga":
@@ -20,6 +20,6 @@
 
   "theme-default":
   {
-    "theme": "dark"
+    "theme": "night"
   }
 }
