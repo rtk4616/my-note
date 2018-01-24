@@ -1,11 +1,16 @@
 {
-  "plugins": ["ga", "disqus"],
+  "plugins": ["ga", "disqus", "theme-api"],
   "pluginsConfig": {
     "ga": {
       "token": "UA-112991893-1"
     },
+
     "disqus": {
       "shortName": "azraeil"
+    },
+
+    "theme-api": {
+      "theme": "dark"
     }
   }
 }
