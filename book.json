@@ -1,16 +1,25 @@
 {
-  "plugins": ["ga", "disqus", "theme-api"],
-  "pluginsConfig": {
-    "ga": {
+  "plugins": [
+    "ga",
+    "disqus",
+    "theme-comscore"
+  ],
+  
+  "pluginsConfig":
+  {
+    "ga":
+    {
       "token": "UA-112991893-1"
     },
 
-    "disqus": {
+    "disqus":
+    {
       "shortName": "azraeil"
     }
   },
 
-  "theme-default": {
+  "theme-default":
+  {
     "theme": "dark"
   }
 }
