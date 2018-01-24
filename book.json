@@ -1,15 +1,9 @@
 {
-  "plugins": ["ga"],
+  "plugins": ["ga", "disqus"],
   "pluginsConfig": {
     "ga": {
       "token": "UA-112991893-1"
-    }
-  }
-}
-
-{
-  "plugins": ["disqus"],
-  "pluginsConfig": {
+    },
     "disqus": {
       "shortName": "azraeil"
     }
