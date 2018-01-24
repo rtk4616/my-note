@@ -20,6 +20,11 @@
 
   "theme-default":
   {
+    "showLevel": true
+  },
+
+  "fontSettings":
+  {
     "theme": "night"
   }
 }
