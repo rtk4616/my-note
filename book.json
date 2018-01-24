@@ -1,0 +1,8 @@
+{
+  "plugins":["ga"],
+  "pluginsCongig":{
+    "ga":{
+      "token":"UA-112991893-1"
+    }
+  }
+}
