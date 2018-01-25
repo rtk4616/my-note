@@ -5,7 +5,7 @@
 因此先讓現在的`我`留下痕跡(筆記)。  
 希望能讓未來的`我`能夠更快速進入狀況。
 
-也是一個很棒的練習，因爲你最少要讓未來的你看得懂吧？：)
+寫作也是一個很棒的練習，因爲你最少要讓未來的你看得懂吧？：)
 
 > 我在改寫這個 README 的時候，已經回頭很多次來查我自己的筆記了 XD
 
@@ -16,9 +16,9 @@ https://www.ptt.cc/bbs/Soft_Job/M.1490532291.A.DBE.html
 
 `landlord`：
 
-  「 I don't care if you suck at writing.
-  I don't care if nobody reads your blog.
-  I don't care if you have nothing interesting to say.」
+  「 I don't care if you suck at writing.  
+  I don't care if nobody reads your blog.  
+  I don't care if you have nothing interesting to say.」  
   因為，你是在跟自己對話，是在讓自己變強變好，是在練習著讓自己吸收更多、反應更快、表達更好。
 
 - 好處一：產生學習動機，有方向性地篩選資訊  

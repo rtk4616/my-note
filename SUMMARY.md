@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [About this gitbook](README.md)
 
 * [Gitbook筆記]()
   <!-- - [Markdown 語法補充]() -->
