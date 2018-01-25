@@ -11,7 +11,7 @@
 
 經典討論串：
 [心得] 寫blog的好處 by landlord 與 Y78
-https://www.ptt.cc/bbs/Soft_Job/M.1490532291.A.DBE.html
+https://www.ptt.cc/bbs/Soft_Job/M.1490532291.A.DBE.html  
 一些重點節錄：
 
 `landlord`：
