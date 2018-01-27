@@ -40,4 +40,4 @@ https://www.ptt.cc/bbs/Soft_Job/M.1490532291.A.DBE.html
 
 ## So, Let's Writing !!!
 
-<iframe  src="https://uploads.disquscdn.com/images/ee153e03ae0e7d998fc7dbe981acc3a8f665488d989cde1d0a2c83c013715dd5.gif">
+<iframe width=540 height=304 src="https://uploads.disquscdn.com/images/ee153e03ae0e7d998fc7dbe981acc3a8f665488d989cde1d0a2c83c013715dd5.gif">
