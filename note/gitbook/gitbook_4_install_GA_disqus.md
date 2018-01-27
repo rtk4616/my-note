@@ -224,6 +224,9 @@ info: loading plugin "theme-default"... OK
 猜對啦，弄老半天...：
 
 要放在 pluginsConfig 的最後面，json 不會回頭找。
+
+You should put the fontsettings in the final place because the load order of plugin.
+
 ```json
   "fontsettings": {
     "theme": "night",

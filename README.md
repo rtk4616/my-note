@@ -7,7 +7,9 @@
 
 寫作也是一個很棒的練習，因爲你最少要讓未來的你看得懂吧？：)
 
-> 我在改寫這個 README 的時候，已經回頭很多次來查我自己的筆記了 XD
+> 我在改寫這個 README 的時候，已經回頭過很多次來查我自己的筆記了 XD
+
+---
 
 經典討論串：
 [心得] 寫blog的好處 by landlord 與 Y78
@@ -34,6 +36,8 @@ https://www.ptt.cc/bbs/Soft_Job/M.1490532291.A.DBE.html
 - 第一個共鳴點：幫助自己  
 - 第二個共鳴點：再一次的學習
 
-> 再一次學習真的覺得超棒。
+> 再一次學習這一點真的覺得超棒，在寫筆記的過程中。
 
-## Let's writing !!!
+## So, Let's Writing !!!
+
+<iframe  src="https://uploads.disquscdn.com/images/ee153e03ae0e7d998fc7dbe981acc3a8f665488d989cde1d0a2c83c013715dd5.gif">
