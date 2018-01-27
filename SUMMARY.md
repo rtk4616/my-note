@@ -46,4 +46,5 @@
   - [Rails 從零開始 Part C, Create](rails/rails_guide/medium_rails_guide_2-2.md)
   - [Rails 從零開始 Part D, Read](rails/rails_guide/medium_rails_guide_2-3.md)
   - [Rails 從零開始 Part E, Update 與 Delete](rails/rails_guide/medium_rails_guide_2-4.md)
+  - [部署 Rails App 至 Heroku](rails/rails_guide/deploy_rails_app_to_heroku.md)
   <!-- - [](rails_guide/medium_rails_guide_) -->
