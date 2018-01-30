@@ -12,6 +12,10 @@
   - [將 Gitbook 同步至 Github](note/gitbook/gitbook_3_sync_with_github.md)
   - [Gitbook Plugin 踩雷心得](note/gitbook/gitbook_4_install_GA_disqus.md)
 
+* [Git 筆記]()
+  - [Git 基礎指令](note/git/git_guide.md)
+  - [Git 分支](note/git/git_branch.md)
+
 * [Ruby學習筆記]()
   - [物件導向OOP]()
     - [1.物件導向介紹](ruby/ruby_OOP/1-1_OOP_introduction.md)
