@@ -133,7 +133,7 @@ git checkout todolist
 4. 還有我們需要一個欄位儲存該 todolist 是否完成(done)，我們用 boolean (True or False)。
 5. 攻略有個 finaldate 也是存成 string ，沒說明用意，我們繼續看下去，有需要再用 rails g migration <migration_name>，修改 migration file 就好了。
 
-### 建立 ToDoList Model
+### 建立 ToDoList Model, Part1
 ```rb
 rails g model Task
 ```
@@ -158,6 +158,26 @@ end
 
 去 schema.db 觀察確認一下欄位是否正常。
 
+---
+### 建立 ToDoList Model, Part2 設定欄位預設值
+`rails g migration add_default_value_to_done`
+```rb
+class AddDefaultValueToDone < ActiveRecord::Migration[5.1]
+  def change
+    # 修改欄位型別：change_column(table_name, column_name, type, options)
+    change_column(:tasks, :done, :boolean, :default => false)
+  end
+end
+```
+
+讓 :done 欄位的預設值爲 false。
+
+rails db:migrate
+
+觀察一下 schema.rb 是否正常。
+
+---
+### 建立 ToDoList Model, Part3 Git 提交備份
 OK，記得 commit 一下。
 ```bash
 git status > temp01
