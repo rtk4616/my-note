@@ -22,7 +22,8 @@ end
 這行的用意就是去找出今天的日期，而後面的 `strftime` [官方介紹](https://ruby-doc.org/core-2.1.5/Time.html#method-i-strftime)。  
 strftime( string ) → string click to toggle source  
 Formats time according to the directives in the given format string.  
-或是在 irb 裏面查詢測試：  <br>
+或是在 irb 裏面查詢測試：
+
 ```bash
 irb(main):005:0> irb
 irb#1(main):001:0> Time.now
@@ -146,4 +147,4 @@ class TasksController < ApplicationController
 end
 ```
 
-應該是沒什麼問題才對，沒有其他特殊需求了。
+controller 的部分就暫時這樣吧。
