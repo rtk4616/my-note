@@ -38,19 +38,19 @@
 
 ```html
 未完成
-待辦事項名稱(Name)    截止時間(Deadline)  說明(Desciption)
+待辦事項名稱(Name)    截止時間(Deadline)  說明(Description)
 1.            完成  檢視  編輯  刪除
 2.            完成  檢視  編輯  刪除
 3.            完成  檢視  編輯  刪除
 
 已完成
-待辦事項名稱(Name)    截止時間(Deadline)  說明(Desciption)
+待辦事項名稱(Name)    截止時間(Deadline)  說明(Description)
 1.            檢視  編輯  刪除
 2.            檢視  編輯  刪除
 3.            檢視  編輯  刪除
 
 已過期
-待辦事項名稱(Name)    截止時間(Deadline)  說明(Desciption)
+待辦事項名稱(Name)    截止時間(Deadline)  說明(Description)
 1.            檢視  編輯
 ```
 
@@ -109,19 +109,19 @@ git checkout todolist
 根據我們想像的雛形思考我們 Model 資料庫所需要的資料類型：  
 ```html
 未完成
-待辦事項名稱(Name)    截止時間(Deadline)  說明(Desciption)
+待辦事項名稱(Name)    截止時間(Deadline)  說明(Description)
 1.            完成  檢視  編輯  刪除
 2.            完成  檢視  編輯  刪除
 3.            完成  檢視  編輯  刪除
 
 已完成
-待辦事項名稱(Name)    截止時間(Deadline)  說明(Desciption)
+待辦事項名稱(Name)    截止時間(Deadline)  說明(Description)
 1.            檢視  編輯  刪除
 2.            檢視  編輯  刪除
 3.            檢視  編輯  刪除
 
 已過期
-待辦事項名稱(Name)    截止時間(Deadline)  說明(Desciption)
+待辦事項名稱(Name)    截止時間(Deadline)  說明(Description)
 1.            檢視  編輯
 ```
 
@@ -144,6 +144,7 @@ rails g model Task
 class CreateTasks < ActiveRecord::Migration[5.1]
   def change
     create_table :tasks do |t|
+      t.text "name"
       t.date "deadline"
       t.text "description"
       t.boolean "done"
