@@ -429,7 +429,8 @@ rails db:migrate:status
 ```
 3. 這次先不刪除那個 migration file 改名就好。
 4. 再輸入 `rails db:migrate:status`。
-```
+
+```rb
 Status   Migration ID    Migration Name
 --------------------------------------------------
   up     20180118074716  Create users

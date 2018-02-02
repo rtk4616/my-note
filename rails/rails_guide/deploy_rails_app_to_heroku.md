@@ -70,7 +70,8 @@ heroku create rails-app-test-1
 a. 理解 Rails 執行模式：  
    development, test, production，根據不同的模式 Rails 會跑不一樣的環境。  
 b. 我們需要變更 Rails 使用的資料庫，因爲 Heroku 預設是 PostgreSQL。  
-   編輯 `Gemfile`：<br>  
+   編輯 `Gemfile`：
+
 ```rb
 # 移動 sqlite3 至 developmetn and test group
 # Use sqlite3 as the database for Active Record
