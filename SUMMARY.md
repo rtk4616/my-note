@@ -53,5 +53,5 @@
   - [部署 Rails App 至 Heroku](rails/rails_guide/deploy_rails_app_to_heroku.md)
   - [ToDoList App Part1 Model](rails/rails_guide/to_do_list_guide_1.md)
   - [ToDoList App Part2 Routes](rails/rails_guide/to_do_list_guide_2.md)
-  - [ToDoList App Part3 Controller](rails/rails_guide/to_do_list_guide_3.md)
+  - [ToDoList App Part3 Controller](rails/rails_guide/to_do_list_guide_3.md)
   - [ToDoList App Part4 View](rails/rails_guide/to_do_list_guide_4.md)
