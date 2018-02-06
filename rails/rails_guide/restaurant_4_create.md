@@ -221,3 +221,5 @@ Supported verbs are :post, :delete, :patch, and :put.
 Note that if the user has JavaScript disabled, the request will fall back to using GET.  
 If href: '#' is used and the user has JavaScript disabled clicking the link will have no effect.  
 If you are relying on the POST behavior, you should check for it in your controller's action by using the request object's methods for post?, delete?, patch?, or put?.
+
+下一篇，我們來嘗試用幾個 gems，擴充我們網站的功能。
