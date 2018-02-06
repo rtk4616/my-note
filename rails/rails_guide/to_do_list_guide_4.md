@@ -56,7 +56,7 @@ $ touch show.html.erb
       <td><%= task.description %></td>
 
       <td>
-        <%= link_to "完成", task_path(task.id), method: "done" %>
+        <%= link_to "完成", task_path(task.id), method: :post %>
         <%= link_to "檢視", task_path(task.id) %>
         <%= link_to "編輯", edit_task_path(task.id) %>
         <%= link_to "刪除", task_path(task.id), method: "delete",
@@ -129,7 +129,7 @@ $ touch show.html.erb
 </table>
 ```
 
-首先會遇到的問題是 `<%= link_to "完成", done_task_path(task.id), method: "done" %>`，done method (完成按鈕)執行時會遇到：
+首先會遇到的問題是 `<%= link_to "完成", done_task_path(task.id), method: :post %>`，done method (完成按鈕)執行時會遇到：
 
 ```log
 Routing Error
@@ -151,11 +151,26 @@ edit_task GET    /tasks/:id/edit(.:format) tasks#edit
        DELETE /tasks/:id(.:format)      tasks#destroy
 ```
 
-<%= link_to "完成", task_path(task.id), method: "done" %> 是我單純測試用的寫法，觀察了一下行爲，網址是 `tasks/1` 與我們希望的 `tasks/1/done` 不符，因此來試試改成 `done_task_path(task.id)`。
+<%= link_to "完成", task_path(task.id), method: :post %> 是我單純測試用的寫法，觀察了一下行爲，網址是 `tasks/1` 與我們希望的 `tasks/1/done` 不符，因此來試試改成 `done_task_path(task.id)`。
 
 成功！
 
 簡單的待辦事項 ToDoList App 就這樣完成啦。
+
+修正：  
+當初在 ToDoList 首頁 view 的部分：  
+`<%= link_to "完成", done_task_path(task.id), method: "done" %>`  
+method 那邊是 "done"，這不是 controller method 嗎？我是不是該打 `:post`，結論是都可以，難道說可以不用打？好像是耶因爲 `/tasks/:id/done` 在我的 routes 裡是唯一的，要打的話應該要打 `:post` ？對，沒錯，should be `symbol of HTTP verb`。
+
+[link_to 文件連結](http://api.rubyonrails.org/v5.1/classes/ActionView/Helpers/UrlHelper.html#method-i-link_to)
+
+> link_to(name = nil, options = nil, html_options = nil, &block)
+Creates an anchor element of the given name using a URL created by the set of options.
+
+> method: symbol of HTTP verb -   
+This modifier will dynamically create an HTML form and immediately submit the form for processing using the HTTP verb specified.  
+Useful for having links perform a POST operation in dangerous actions like deleting a record (which search bots can follow while spidering your site).  
+Supported verbs are :post, :delete, :patch, and :put.  
 
 ```log
 git add .
