@@ -227,3 +227,81 @@ end
 `rails g kaminari:views` Kaminari 也有像 Devise 的樣板指令，不過我們希望用 Bootstrap 套版的樣式，因此等完成 Bootstrap 後，再一併執行。
 
 > 看到有人提出編輯某筆資料後，如何能夠回到那筆資料在的分頁：`session[:return_to] = request.referer.present? ? request.referer : root_path`，使用 session 儲存上一頁地址，還有考慮若使用者是直接連到該頁面時的情形(沒有上一頁資訊)。
+
+---
+### 安裝並設定 Bootstrap gem
+#### 安裝 bootstrap-sass 與 sass-rails 並指定版本
+編輯 Gemfile：
+```rb
+# Use Bootstrap for beautiful view
+gem 'bootstrap-sass', '~> 3.3.7'
+# Use SCSS for stylesheets
+gem 'sass-rails', '>= 3.2'
+```
+
+本來的 Gemfile 就有 `sass-rails` 的設定了，暫時依照教案的降版本(？)。
+
+`bundle install`
+
+#### 修改 application.css 的副檔名
+Rails 會透過 `app/assets/stylesheets/application.css` 來載入專案需要的 CSS 檔案，因爲安裝了 Bootstrap，我們需要將 `CSS` 格式檔案改爲 `SCSS` 。
+
+`mv app/assets/stylesheets/application.css app/assets/stylesheets/application.scss`
+
+#### 編輯 application.scss
+```scss
+刪除 `*= require_self` 以及 `*= require_tree .`
+/* 在最下方加入 */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+```
+
+bootstrap-sprockets 必須要在 bootstrap 之前載入。
+
+#### 安裝 jQuery for bootstrap javascript
+`gem 'jquery-rails'`
+
+`bundle install`
+
+> 因爲 bootstrap 有用到 jQuery
+
+#### 載入 Bootstrap JavaScript
+編輯 `app/assets/javascripts/application.js`
+
+```js
+//= require jquery
+//= require bootstrap-sprockets
+```
+
+#### Bootstrap 8個套版清單示範
+- 導覽列套用 Navbar 樣式，change navbar
+- 替 Flash message 套用 Alert 樣式，use Alert components for flash message
+- 讓 Flash message 出現右上角取消按鈕，use Dismissible alerts
+- 導覽列追加首頁按鈕以及後台按鈕，add root link and admin link to navbar
+- 後台餐廳總表改成表格，add table style for admin restaurants/index
+- 美化餐廳詳情(show)頁面，styled restaurant show page
+- 美化新增餐廳與編輯餐廳表單，styled restaurant new and edit form
+- 產生 Kaminari 分頁樣板，add kaminari paging views with bootstrap
+
+<!-- 恩，因爲我的目標是後端因此這些 bootstrap 前端樣式表我應該之後 demo 真的有要弄再補吧，幸好之前沒衝動去查，想說之前 bootstrap 章節也教太少，這種重複性太高的感覺真不好。  
+這個情況是我想要拖延嗎？好像是耶，其實分量應該還好，畢竟教材都弄了，補一補吧，至少增加點印象。
+
+不過這是 admin 頁面，之後一般使用者頁面是不是要再來一次？
+
+打開看到 code 就有點...我是該用複製的呢還是？實際練習應該是上 bootstrap 官網看範例然後照著範例改成自己要的吧？
+
+研究了下 atom git 相關 package，有在思索到底要不要完全在 atom 上玩，想用 windows 快速貼上。
+
+因爲我目前遇到了一個問題，我可能需要快速複製某些檔案內容從 github 上到我本機的檔案上，這樣是不是 git clone 最快？
+-->
+
+#### 產生 Kaminari 分頁樣板
+`rails g kaminari:views bootstrap3`
+
+這算是超神奇指令了吧，什麼都不用改，還真的這樣就有樣式了...，我本來以爲其他 bootstrap 也該這樣。
+
+---
+### deploy app 交作業
+[參考我自己的筆記 XD](https://azraeil.gitbooks.io/my-note/content/rails/rails_guide/deploy_rails_app_to_heroku.html)
+
+還有發現 bug，以及新的想法，就是筆記上面的內容一定要是對的，遇到的問題之後補充沒問題，不然回頭爬錯誤的筆記又遇到一次會昏倒。

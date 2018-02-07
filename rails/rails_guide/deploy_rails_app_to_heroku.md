@@ -82,9 +82,10 @@ gem 'sqlite3'
 # 新增
 # for Heroku_test
 group :production do
-  gem 'pg'
+  gem 'pg', '~> 0.18'
 end
 ```
+**這邊要注意的是要指定版本，不然會遇到[錯誤](https://azraeil.gitbooks.io/my-note/content/rails/rails_guide/deploy_rails_app_to_heroku.html#%E6%88%91%E9%81%87%E5%88%B0%E7%9A%84-pg-version-%E5%95%8F%E9%A1%8C1)**
 8. 回到 terminal：
 
 ```bash
