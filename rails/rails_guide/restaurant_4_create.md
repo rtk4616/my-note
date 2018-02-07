@@ -1,4 +1,4 @@
-### 補齊需要的 controller method：CRUD
+### Part D 補齊後台需要的 controller method：CRUD
 > 看到同學推薦的 atom erb snippets，趕緊試用：
 `command + shift + .` 循環切換。
 只能說讚，相見恨晚系列 +1。
@@ -10,15 +10,16 @@ erb-snippets 快捷鍵練習
 #### 完成 new.html.erb
 關於 `<%= form_for [:admin, @restaurant] do |f| %>`
 這邊的用法跟之前的`form_for(@user) do |f|`不一樣是因爲我們在 routes 那邊有用 `namespace :admin do ... end`。
-* 本來的寫法 `form_for @restaurant do |f|`，`form_for` 會依據 `@restaurant` 自動判斷可能指向：
-1.新增：new_restaurant_path
-2.修改：edit_restaurant_path(@restauran.id)
+* 本來的寫法 `form_for @restaurant do |f|`，`form_for` 會依據 `@restaurant` 自動判斷可能指向：  
+1. 新增：new_restaurant_path
+2. 修改：edit_restaurant_path(@restauran.id)
 
 * 而 `[:admin, @restaurant]` 這樣的寫法 `form_for` 會自動判斷，可能指向
 1.新增：new\_`admin_`restaurant\_path
 2.修改：edit\_`admin_`restaurant_path(@restaurant)
 這樣的寫法才能符合 `namespace :admin` routes 的設定。
 
+---
 ### **Strong Parameters**
 `params.require(:restaurant).permit(:name, :opening_hours, :tel, :address, :description)`：
 在讀取表單時，基於安全考量，必須對傳入的參數做特別處理，這是 Rails 強制要求的。
@@ -40,6 +41,7 @@ end
 ```
 > 跟資料有關，因此去 Model 設定。
 
+---
 ### 在表單上加入錯誤提示
 當使用者點下送出將 @restaurant 送進 Model 時，Model 發現 @restaurant.name 沒有內容，Model 會因此把物件退回 Controller，同時將錯誤訊息的提示字串存進 @restaurant.errors 裡。
 
@@ -78,10 +80,10 @@ end
 <% end %>
 ```
 
-- 若 @restaurant 內有任何錯誤訊息：`@restaurant.errors.any?`，就顯示一段<h2>內容告訴使用者有錯誤發生，`any?`是語義化寫法，和之前用到的 present? 相似，只要 `@restaurant.errors` 不是 nil，不爲空就回傳 `True`。
+- 若 @restaurant 內有任何錯誤訊息：`@restaurant.errors.any?`，就顯示一段`<h2>`內容告訴使用者有錯誤發生，`any?`是語義化寫法，和之前用到的 present? 相似，只要 `@restaurant.errors` 不是 nil，不爲空就回傳 `True`。
 - `full_messages`：這個 method 會自動幫我們把 Model 送進來的 `@restaurant.errors` 訊息變成完整的句子(有這麼神？真的)。
 - 因爲錯誤訊息可能不只一個，因此用 each do...end 寫法取出。
-- 最後撰寫 HTML 來格式化，這裡主要使用 <ul> 與 <li> 來整理。
+- 最後撰寫 HTML 來格式化，這裡主要使用 `<ul>` 與 `<li>` 來整理。
 
 OK，create 暫時到這邊告一段落。
 
@@ -154,7 +156,8 @@ end
 ### 測試 edit 與 update 以及 new
 `rails s`
 - 測試 new，用 render 方法後是否運作正常，name 刻意留空。
-- 測試 edit，name 刻意留空後，update 會顯示：
+- 測試 edit，name 刻意留空後，update 會顯示：  
+
 ```html
 Restaurant was failed to update!
 

@@ -1,4 +1,4 @@
-這章節重點應該是後臺的建立與設計
+這章節重點應該是後臺的建立與使用Gems
 
 會學習到的套件：
 - 登入網站：Devise
@@ -76,6 +76,7 @@ end
 ```
 
 rails db:migrate
+
 ---
 ### 建立網站前台入口
 編輯 routes.rb，設定首頁 `root "restaurant#index"`
@@ -84,10 +85,10 @@ rails g controller restaurants
 
 編輯 restaurant_controller.rb，建立 暫時空白的 index method
 
-cd app/views/restaurants/
-touch index.html.erb
-atom index.html.erb
-編輯 index.html.erb，<h1>餐廳前臺</h1>
+cd app/views/restaurants/  
+touch index.html.erb  
+atom index.html.erb  
+編輯 index.html.erb，加上 `<h1>餐廳前臺</h1>`
 
 ---
 ### 建立網站後台入口

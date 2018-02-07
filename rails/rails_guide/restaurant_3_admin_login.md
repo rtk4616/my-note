@@ -24,6 +24,7 @@ end
 
 因此如果我們 `把這個 private method 放在 ApplicationController` 就可以讓未來新增的 controller 都能用了，因爲他們都會從 ApplicationController 繼承。
 
+---
 ### 如果專案有多個 controller
 #### 在 application_controller.rb 加入驗證Admin的方法
 編輯 `app/controllers/application_controller.rb`：
@@ -48,6 +49,7 @@ end
 
 `.admin?` 是待會我們要寫的 User instance method(因爲 current_user 會回傳 User instance，所以該 instance 可以用來呼叫 .admin?)，.admin? 會回傳 true 或 false。
 
+---
 #### 設計 .admin? instance method
 編輯 `app/models/user.rb`
 ```rb
@@ -76,7 +78,7 @@ class Admin::RestaurantsController < ApplicationController
 end
 ```
 
-### 建立網站管理員身份
+### 賦予 admin 網站管理員身份
 因爲一般的使用者申請完的 role 欄位一定是 nil。
 
 因此我們要手動賦予 role = "admin"。

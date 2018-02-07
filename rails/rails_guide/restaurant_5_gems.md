@@ -1,4 +1,4 @@
-# 替 Restaurant 擴充一些功能透過 幾個 Gems
+# Part E 替 Restaurant 擴充一些功能透過 幾個 Gems
 ## 上傳照片功能 - CarrierWave
 ### 爲了新增照片而增加 Restaurant 的資料庫欄位
 `rails g migration add_image_to_restaurants`  
@@ -81,6 +81,7 @@ end
 
 別忘了我們只有改 new 跟 edit，show 還沒改。
 
+---
 ### 上傳圖片測試
 #### 記得重啓 rails server 伺服器
 沒有重啓的話，會遇到 uninitialized constant Restaurant::PhotoUploader error message。  
@@ -283,18 +284,7 @@ bootstrap-sprockets 必須要在 bootstrap 之前載入。
 - 美化新增餐廳與編輯餐廳表單，styled restaurant new and edit form
 - 產生 Kaminari 分頁樣板，add kaminari paging views with bootstrap
 
-<!-- 恩，因爲我的目標是後端因此這些 bootstrap 前端樣式表我應該之後 demo 真的有要弄再補吧，幸好之前沒衝動去查，想說之前 bootstrap 章節也教太少，這種重複性太高的感覺真不好。  
-這個情況是我想要拖延嗎？好像是耶，其實分量應該還好，畢竟教材都弄了，補一補吧，至少增加點印象。
-
-不過這是 admin 頁面，之後一般使用者頁面是不是要再來一次？
-
-打開看到 code 就有點...我是該用複製的呢還是？實際練習應該是上 bootstrap 官網看範例然後照著範例改成自己要的吧？
-
-研究了下 atom git 相關 package，有在思索到底要不要完全在 atom 上玩，想用 windows 快速貼上。
-
-因爲我目前遇到了一個問題，我可能需要快速複製某些檔案內容從 github 上到我本機的檔案上，這樣是不是 git clone 最快？
--->
-
+---
 #### 產生 Kaminari 分頁樣板
 `rails g kaminari:views bootstrap3`
 
@@ -305,3 +295,28 @@ bootstrap-sprockets 必須要在 bootstrap 之前載入。
 [參考我自己的筆記 XD](https://azraeil.gitbooks.io/my-note/content/rails/rails_guide/deploy_rails_app_to_heroku.html)
 
 還有發現 bug，以及新的想法，就是筆記上面的內容一定要是對的，遇到的問題之後補充沒問題，不然回頭爬錯誤的筆記又遇到一次會昏倒。
+
+部署完了，還沒完，還得弄新使用者。
+
+```bash
+heroku run rails console
+# 找到剛才註冊的使用者
+user = User.last
+user.role = "admin"
+user.save
+user.role
+```
+
+不知道有沒有別的操作方法？  
+先在本機創好 admin 再 push 過去？資料庫不同吶。
+
+而且還需要假資料，因爲跟本機資料庫不是同一個：  
+`heroku run rails dev:fake`
+
+
+### debug 練習
+```html
+<% form_for  [:admin, @restaurant] do |f| %>
+```
+
+`form_for` 記得要用 `<%=  %>` 網頁才會顯示表單。
