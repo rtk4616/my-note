@@ -137,6 +137,8 @@ e. 測試 上線的 Rails App：
 值得注意的是 之後 git push 指令似乎都是要下：  
 `git push heroku master`
 
+> 因爲把 master branch 推上去，heroku 才會吃的樣子，推其他 branch 上去可以，但是 heroku 不會有其他反應。
+
 ---
 ### 我遇到的 pg version 問題#1  
 `
