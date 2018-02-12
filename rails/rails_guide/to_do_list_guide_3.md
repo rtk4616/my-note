@@ -20,8 +20,8 @@ end
 這裡我們一行一行說明：
 1. today = Time.now.strftime("%m-%d-%Y")  
 這行的用意就是去找出今天的日期，而後面的 `strftime` [官方介紹](https://ruby-doc.org/core-2.1.5/Time.html#method-i-strftime)。  
-strftime( string ) → string click to toggle source  
-Formats time according to the directives in the given format string.  
+strftime( string ) → string.
+Formats time according to the directives in the given format string.  
 或是在 irb 裏面查詢測試：
 
 ```bash
