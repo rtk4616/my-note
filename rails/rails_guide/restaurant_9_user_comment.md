@@ -170,7 +170,7 @@ end
 </div>
 ```
 
-記得表單陣列參數裡的`實例變數順序` 會影響後續送出表單的目的地路徑：  
+記得表單陣列參數裡的 `實例變數順序` 會影響後續送出表單的目的地路徑：  
 - 若寫成 [@comment, @restaurant] 會輸出 `comment_restaurant_path`，就會出現 NoMethodError。
 
 ---
@@ -221,4 +221,83 @@ end
 <% if current_user.admin? %>
   <%= link_to "Delete", restaurant_comment_path(@restaurant, comment), method: :delete %>
 <% end %>
+```
+
+---
+## 產生假的 User 與 Comment 資料
+<!-- 有給參考的 CODE，我覺得還行。 -->
+假資料目前分成三個部分：
+- 假餐廳資料，已完成！改指令名稱即可：`rails dev:fake_restaurants`
+- 假使用者，待完成：`rails dev:fake_users`
+- 假評論，待完成：`rails dev:fake_comments`
+  - 要注意 comments 有與另外兩個資料表關聯，因此兩個 FK：`restaurant_id` 與 `user_id` 欄位不能為 `nil`。
+
+編輯 `lib/tasks/dev.rake`
+```rb
+
+  # for fake user data
+  task fake_users: :environment do
+    # 這邊 User 砍下去，admin 也會被砍掉，能用 except 保留嗎？或是之後再用 rake db:seed
+    User.destroy_all
+
+    10.times do
+      # 忘記欄位回去翻 schema.db
+      User.create!(
+        email: FFaker::Internet.email,
+
+        # 神奇的事情發生了，我去 schema 看 明明這欄位就叫 `encrypted_password`
+        # 但是錯誤回報是給 ActiveRecord::RecordInvalid: Validation failed: Password can't be blank
+        # 是 Password
+        # encrypted_password: FFaker::Name.unique.name
+        password: FFaker::Name.unique.name
+      )
+    end
+
+    puts "Rake and FFaker have created fake users."
+    puts "Now we have #{User.count} users."
+  end
+
+  # for fake user comment
+  task fake_comments: :environment do
+    Comment.destroy_all
+
+    # 要記得 comment 無法獨立存在，因爲 comment 一定是 user 對某個 restaurant 的評語
+    # 因此思考跟切入的點要注意
+    # 這個做法是逐一掃過每間餐廳爲每個餐廳建立 1 個評論，共做 3 次，因此每間餐廳會有 3 筆評論
+    # 有同學分享其他想法跟做法，讚
+    3.times do
+      Restaurant.all.each do |restaurant|
+        restaurant.comments.create!(
+          user_id: User.all.sample.id,
+          content: FFaker::Lorem.sentence
+        )
+      end
+    end
+
+    puts "Rake and FFaker have created fake comments."
+    puts "Now we have #{Comment.count} comments."
+  end
+
+```
+
+記得 push 到 heroku 的時候還要執行
+
+```bash
+heroku run rails db:migrate
+heroku run rails dev:fake_restaurants
+heroku run rails dev:fake_users
+heroku run rails dev:fake_comments
+heroku run rails db:seed
+```
+
+發現了一些 假資料 跟 seed 資料上的順序問題，分類跟餐廳和使用者有關聯，因此 seed 餐廳分類跟 admin 帳號資料要先跑。
+
+跑完才去建假餐廳資料，因爲目前設計 假餐廳資料建立時，要先去隨機選取餐廳分類，所以餐廳分類要先出來。
+
+這樣子的話，順序會變成：
+```bash
+rails dev:fake_users
+rails db:seed
+rails dev:fake_restaurants
+rails dev:fake_comments
 ```
