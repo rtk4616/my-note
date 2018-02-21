@@ -27,7 +27,23 @@
   - `<a href="https://tw.alphacamp.co" target="_blank"> 超連結在新視窗開啓網頁</a>`
   - `<a href="https://tw.alphacamp.co" target="_self"> 超連結在目前視窗開啓網頁</a>`
 - 圖片：img
+  - `<img src="images/logo.png" alt="logo"`,
+    - img 沒有結尾標籤
+    - src 插入圖片的位置
+    - alt 沒有圖片時的替代文字
 - 區域：div, span
 - 表格：table, tr, th, td
 - 表單：form, label, input
 - 容器(box)：div, span
+
+http://web.thu.edu.tw/hzed/www/tag.htm
+
+<!-- 沒想到前100名還真的有回頭看。。。是因為進度到了? -->
+
+常用小圖示套件：
+- font awesome 套件：提供製作成字型的圖示，不過據說網頁會變卡。
+- Glyphicons 也很有名。
+
+假圖片網站：
+- Placeholder.com
+- Lorempixel
