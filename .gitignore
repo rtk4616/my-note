@@ -16,7 +16,7 @@ _book
 *.pdf
 
 # private file
-private/*
+private*
 AC*
 temp01
 temp02

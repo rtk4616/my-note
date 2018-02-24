@@ -90,3 +90,9 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0px;
 }
 ```
+
+---
+###
+https://pjchender.blogspot.tw/2015/07/css.html
+在編輯網頁CSS的時候，有時候我們會看到大於（>）的符號，究竟這個符號代表什麼意思呢？
+這個符號其實相當容易理解，你可以把它想成直接的小孩(direct descendant/child)，而平常比較容易看到的空格（space）則是所有小孩的意思。

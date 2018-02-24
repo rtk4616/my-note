@@ -76,3 +76,23 @@ OK，這樣會有重複的，`@user.restaurants.uniq.each do |restaurant|`，用
 ---
 ### 15 章總結
 正好六天，但是 Bootstrap 前端的坑，複雜度太高惹，可能要對前端重新做筆記了。
+
+---
+### 剩下的坑
+1. 假餐廳/使用者圖片機制。  
+
+```rb
+# 讓假的餐廳資料也有圖片
+image: File.open(Rails.root.join("seed_img/cat-01.jpeg"))
+```
+
+- File.open 開啓檔案，裏面接檔案路徑。
+- Rails.root 就是專案資料夾的系統路徑。
+- .join method 把 圖片的路徑填入。 **注意圖片副檔名 jpeg != jpg**
+
+---
+2. 在 heroku 能夠上傳餐廳或使用者圖片並保存起來的方法。
+
+
+---
+3. 使用者評論過的餐廳 bootstrap 與 css。

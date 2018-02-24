@@ -12,11 +12,11 @@
 <th>Category</th>
 
 <!-- 表格內容 -->
-<td><%= category.category.name %></td>
+<td><%= restaurant.category.name %></td>
 ```
 
 ### 更新 Restaurant show.html.erb
-<%= category.category.name %>
+<%= restaurant.category.name %>
 
 ---
 ## 新增或修改餐廳時可選擇分類：new/edit

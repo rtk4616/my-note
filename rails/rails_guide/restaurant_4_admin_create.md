@@ -196,7 +196,7 @@ Name can't be blank
 
 不寫呢？也會是 show 。
 
-> 請注意這邊的 method 應爲 rails routes 的 `Verb` 部分，而不是 controller 的 method。
+> `請注意這邊的 method 應爲 rails routes 的 **Verb** 部分，而不是 controller 的 method。`
 
 這讓我想要確認當初我實現 ToDoList 的完成按鈕是怎麼做的 XD。
 

@@ -234,9 +234,10 @@ end
 
 ---
 不錯的問題：  
-還有同學提到了：需不需要特別定義 foreign key 的問題(我們只有新增FK欄位，但是並沒有特別指定該欄位爲FK)：慣例優於設定 works。
+1. 需不需要特別定義 foreign key 的問題(我們 model 當初只有新增FK欄位，但是並沒有特別指定該欄位爲FK)：rails 慣例優於設定 works。
 
-`@restaurant.build_category()` 與 `@restaurant.create_category()` 的使用情境。有同學分享像是當個人資料切成好幾個頁面要填寫的時候，build_category 就會派上用場，因爲要到最後一頁才需要驗證與儲存。
+2. `@restaurant.build_category()` 與 `@restaurant.create_category()` 的使用情境。  
+有同學分享像是當個人資料切成好幾個頁面要填寫的時候，build_category 就會派上用場，因爲要到最後一頁才需要驗證與儲存。
 
 create_category 則屬於較直觀的用法，一頁資料填完儲存。
 

@@ -70,7 +70,7 @@ h2 {
 - font-weight: 700; 設定文字粗細，預設爲 400;
 - color: green; 顏色
 - background-color: pink; 背景顏色
-  - background-color: transparent; 
+  - background-color: transparent;
 - background-image: url(../images/profile.jpg)
 - background-size: cover; 填滿整個元素。
 - background-position: center; 讓背景水平與垂直置中對齊。
@@ -352,6 +352,7 @@ postition ：
 
 ---
 ### 使用 pseudo-element (僞元素) 設定 clearfix
+- clearfix：解決設定元素浮動之後跑版的問題
 - ::first-line 選取第一行。
 - ::first-letter 選取第一個字。
 - ::before 選取元素的前面的東西。

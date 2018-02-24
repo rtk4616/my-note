@@ -16,6 +16,7 @@
 - 清單：ul, ol, li
   - 沒有順序的清單(unordered list)：ul 定義範圍，li 標示項目
   - 有數字順序的清單(ordered list)： ol 定義範圍， li 標示項目
+  - <ul class="list-unstyled"> 讓項目符號消失。
 - 強調語氣：em, strong
   - em 斜體
   - strong 粗體
@@ -32,7 +33,10 @@
     - src 插入圖片的位置
     - alt 沒有圖片時的替代文字
 - 區域：div, span
-- 表格：table, tr, th, td
+- 表格：table, th, tr, td
+  - th: table header (欄位名稱):此 標 記 中 的 文 字 內 定 為 向 中 (center) 對 齊 且 加 粗 (bold) 的 屬 性 ， 您 可 自 行 更 修
+  - tr: table row
+  - td: table data
 - 表單：form, label, input
 - 容器(box)：div, span
 
@@ -47,3 +51,20 @@ http://web.thu.edu.tw/hzed/www/tag.htm
 假圖片網站：
 - Placeholder.com
 - Lorempixel
+
+---
+### bootstrap grid system 網格系統
+bootstrap 用 12 等分的做法。
+
+所以數字就代表那個元素會佔幾等分。
+
+而爲了不同裝置的螢幕尺寸而有不同的代號能個別做設定：
+- lg, >=1200px, 大螢幕
+- md, >=992px, 小螢幕
+- sm, >=768px, 平板直向
+- xs, all, 手機直向
+
+表格也能用這個控制 在 thead 的欄位設定即可
+
+rails :
+simple_format 可以將一些特殊符號轉為html，例如\n換行符號轉為html的<br>
