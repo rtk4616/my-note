@@ -92,7 +92,7 @@ image: File.open(Rails.root.join("seed_img/cat-01.jpeg"))
 
 ---
 2. 在 heroku 能夠上傳餐廳或使用者圖片並保存起來的方法。
-
+換GEM filestack
 
 ---
 3. 使用者評論過的餐廳 bootstrap 與 css。
