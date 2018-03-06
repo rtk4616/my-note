@@ -1,4 +1,4 @@
-這章節重點應該是後臺的建立與使用Gems
+這章節重點應該是後臺的建立與Gems的使用
 
 會學習到的套件：
 - 登入網站：Devise
@@ -33,7 +33,8 @@ git checkout restaurant
 照理說不會 migrate 這麼多次才對，因此放棄再次建立 branch 這個想法。
 
 所以還是從頭開始比較好，我就上 github 另外開了一個 orgnization ，這樣我的 repo 就不用一直開新的了？
-試試看
+試試看，應該說比較好整理。
+
 ```
 
 ```rb
@@ -57,7 +58,8 @@ git checkout res_forum
 
 ## 建立管理後臺
 ### 建立 restaurant model 與 restaurant table
-rails g model restaurant
+`rails g model restaurant`
+
 ### 設計 restaurant table
 ```rb
 class CreateRestaurants < ActiveRecord::Migration[5.1]
@@ -81,7 +83,7 @@ rails db:migrate
 ### 建立網站前台入口
 編輯 routes.rb，設定首頁 `root "restaurant#index"`
 
-rails g controller restaurants
+`rails g controller restaurants`
 
 編輯 restaurant_controller.rb，建立 暫時空白的 index method
 
@@ -106,6 +108,7 @@ Rails.application.routes.draw do
   resources :products, path: "/admin/products"
 end
 ```
+
 在 resources 後面加上新參數：`path: "/admin/products"`。
 > 請注意 `:` 冒號的位置。
 
@@ -122,6 +125,8 @@ edit_product GET    /admin/products/:id/edit(.:format) products#edit
              PUT    /admin/products/:id(.:format)      products#update
              DELETE /admin/products/:id(.:format)      products#destroy
 ```
+
+> 這個筆記讚，哈哈哈哈，救了我一次。
 
 這樣子我們的網址前面就多了一層 `/admin`，不過 對應的 controller 以及 Prefix 都還是一樣的，如果我們希望 controller 也能各自對應不同的網址，我們會用第二種寫法：
 
