@@ -20,7 +20,10 @@
     "tbfed-pagefooter@^0.0.1",
     "todo@^0.1.3",
     "anchor-navigation-ex@0.1.8",
-    "copy-code-button"
+    "copy-code-button",
+    "otherlink",
+		"code-editor"
+
   ],
 
   "pluginsConfig": {
